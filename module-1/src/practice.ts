@@ -75,10 +75,17 @@
     const email = person?.profile?.email;
 
     // Problem 13
-
+    const fail = (message: string): never => {
+        throw new Error(message)
+    }
 
     // Problem 14
-
+    const value: unknown = false;
+    if (typeof value === "string") {
+        console.log("a string", value.length);
+    } else {
+        console.log("this is not a string");
+    }
 
 
 
