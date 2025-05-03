@@ -46,9 +46,17 @@
         }
     ]
 
+    //tuple
+    const boys: [string, number] = ["imran", 24]
 
+    //union
+    const boys2: (boolean | string | number)[] = ["imran", 25, "falsj", false]
 
+    //Generic Tuple
+    type GenericTuple<X, Y> = [X, Y];
 
+    interface Core { name: string, email: string }
+    const userInfo: GenericTuple<number, Core> = [2555, { name: "imrna", email: "imran@gamil.com" }]
 
 
 
