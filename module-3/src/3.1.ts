@@ -17,8 +17,7 @@
 
     const animal1 = new Animal("imran", "man", "hahaha")
     const animal2 = new Animal("Kalu", "Dog", "Bhuk Bhuk")
-
-    animal2.makeSound()
+    // animal2.makeSound()
 
     //simple version
     class Student {
@@ -29,7 +28,7 @@
         }
     }
     const student1 = new Student("imran", 9, "prince")
-    student1.call()
+    // student1.call()
 
 
 
