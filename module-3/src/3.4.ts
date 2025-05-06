@@ -37,10 +37,10 @@
     const cat = new Cat("small cat", 'cat')
     // const animal = new Animal("common animal", "all")
 
-    const isDog = (animal: Animal): boolean => {
+    const isDog = (animal: Animal): animal is Dog => {
         return animal instanceof Dog
     }
-    const isCat = (animal: Animal): boolean => {
+    const isCat = (animal: Animal): animal is Cat => {
         return animal instanceof Cat
     }
 
