@@ -10,10 +10,31 @@
     }
     const calculation1 = add("20", 20)
 
+    //In Guard
+    type User = {
+        name: string;
+    }
+    type Admin = {
+        name: string;
+        role: "Admin";
+    }
 
+    const getUser = (user: User | Admin) => {
+        if ("role" in user) {
+            return "he is an admin"
+        } else {
+            return "he is a User"
+        }
+    }
 
-
-
+    const user: User = {
+        name: "imran",
+    }
+    const admin: Admin = {
+        name: "amir khan",
+        role: "Admin"
+    }
+    console.log(getUser(admin));
 
 
 
